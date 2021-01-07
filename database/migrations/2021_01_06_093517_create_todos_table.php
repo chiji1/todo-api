@@ -23,9 +23,10 @@ class CreateTodosTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->dateTime('date');
-            $table->string('color')->nullable();
+            $table->string('color')->default('#ffffff');
             $table->boolean('pop')->default(true);
             $table->boolean('mail')->default(false);
+            $table->boolean('completed')->default(false);
             $table->softDeletes();
             $table->timestamps();
         });

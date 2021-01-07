@@ -20,7 +20,7 @@ class TodoController extends Controller
 
     private $module = 'Todo';
 
-    private $searchable = ['user', 'type', 'name', 'ip_address', 'date', 'mail', 'pop'];
+    private $searchable = ['user', 'type', 'name', 'ip_address', 'date', 'mail', 'pop', 'completed'];
     /**
      * Display a listing of the resource.
      *
